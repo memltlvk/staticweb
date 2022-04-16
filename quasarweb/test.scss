@@ -1,0 +1,150 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$primary   : #1976D2;
+$secondary : #26A69A;
+$accent    : #9C27B0;
+
+$dark      : #1D1D1D;
+
+$positive  : #21BA45;
+$negative  : #C10015;
+$info      : #31CCEC;
+$warning   : #F2C037;
+ 
+@use "sass:math";
+
+$accentbg: radial-gradient(circle, lighten($accent, 5%) 0%, $accent 100%);
+
+// base parameter for width calculations
+$card-width: 24rem;
+
+// **********
+
+.bordered {
+  border: 1px solid red;
+}
+
+.persons-card {
+  background-image: url('/assets/personal-card.png');
+  background-size: cover;
+
+  width: 100%;
+  height: 100%;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.person-card-section {
+  font-size: calc(calc(0.0125 * #{$card-width}) + 0.525); // ***** var - Normal font size - 1
+  font-weight: bold;
+  color: $accent;
+  width: 100%;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: stretch;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  padding-top: calc(calc(0.2273 * #{$card-width}) + 0.0000); // ***** var - Top Margin - 2
+}
+
+.person-name {
+  font-size: calc(calc(0.0682 * #{$card-width}) + 0.0000); // ***** var - Person name font size - 3
+  font-weight: bold;
+}
+
+.person-title {
+  font-weight: bold;
+}
+
+.icon-size {
+  font-size: calc(calc(0.0727 * #{$card-width}) + 0.0000); // ***** var - Icon font size - 4
+}
+
+.separator {
+  margin-top: calc(calc(0.0318 * #{$card-width}) + 0.0000); // ***** var - Separator Margin top - 5
+  margin-bottom: calc(calc(0.0318 * #{$card-width}) + 0.0000); // ***** var - Separator Margin  bottom - 6
+}
+
+.person-image-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: calc(calc(0.3182 * #{$card-width}) + 0.0000); // ***** var - Image Width - 7
+
+  z-index: 4;
+
+}
+
+.person-image {
+  height: 100%;
+
+  z-index: 3;
+
+  flex: 100%;
+}
+
+.person-info-div {
+  flex: 100%;
+
+  z-index: 1;
+
+  margin-top: calc(calc(0.0909 * #{$card-width}) + 0.0000); // ***** var - Info Div top margin - 8
+  margin-bottom: calc(calc(0.0909 * #{$card-width}) + 0.0000); // ***** var - Info Div bottom margin - 9
+}
+
+.person-contact-div {
+  flex: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-bottom: calc(calc(0.2273 * #{$card-width}) + 0.0000); // ***** var - Contact div bottom  margin - 10
+}
+
+.phone-div {
+  flex: 100%;
+
+  margin-bottom: calc(calc(0.0318 * #{$card-width}) + 0.0000); // ***** var - Phone Div bottom margin - 11
+}
+
+.email-div {
+  flex: 100%;
+}
+
+@media only screen and (min-width: 24rem) {
+
+  .person-image-div {
+    flex: 30%;
+  }
+
+  .person-info-div {
+    flex: 65%;
+  }
+
+}
