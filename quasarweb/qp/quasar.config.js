@@ -27,7 +27,7 @@ module.exports = configure(function (ctx) {
     // https://v2.quasar.dev/quasar-cli-webpack/boot-files
     boot: [
       'i18n',
-
+      'axios',
     ],
 
     // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-css
@@ -152,9 +152,9 @@ module.exports = configure(function (ctx) {
 
 
       manifest: {
-        name: `Quasar App`,
-        short_name: `Quasar App`,
-        description: `A Quasar Project`,
+        name: `CC Static Web`,
+        short_name: `CC Static Web`,
+        description: `CC Static Web`,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
@@ -219,7 +219,7 @@ module.exports = configure(function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'qp'
+        appId: 'ccstaticweb'
       },
 
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain

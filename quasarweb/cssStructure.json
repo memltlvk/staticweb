@@ -1,0 +1,35 @@
+{ 
+
+"cssData": [ 
+	{"id":"1","cssClass":"__base_parameter","cssProperty":"cardWidth","cssVariable":"--cardWidth","dataset0":"14,22","dataset1":"22,30"}, 
+	{"id":"2","cssClass":"person-card-section","cssProperty":"font-size","cssVariable":"--normalFontSize","dataset0":"0.7,0.9","dataset1":"0.7,0.9"}, 
+	{"id":"3","cssClass":"person-card-section","cssProperty":"padding-top","cssVariable":"--cardTopMargin","dataset0":"2.5,4","dataset1":"2.5,4"}, 
+	{"id":"4","cssClass":"person-card-section","cssProperty":"padding-bottom","cssVariable":"--cardBottomMargin","dataset0":"2.5,4","dataset1":"2.5,4"}, 
+	{"id":"5","cssClass":"person-card-section","cssProperty":"padding-left","cssVariable":"--cardLeftMargin","dataset0":"1,4","dataset1":"1,4"}, 
+	{"id":"6","cssClass":"person-card-section","cssProperty":"padding-right","cssVariable":"--cardRightMargin","dataset0":"1,4","dataset1":"1,4"}, 
+	{"id":"7","cssClass":"person-image-div","cssProperty":"width","cssVariable":"--imageDivWidth","dataset0":"4.5,7","dataset1":"4.5,7"}, 
+	{"id":"8","cssClass":"person-info-div","cssProperty":"margin-top","cssVariable":"--infodivTopMargin","dataset0":"1.3,2.8","dataset1":"1.3,2.8"}, 
+	{"id":"9","cssClass":"person-info-div","cssProperty":"margin-bottom","cssVariable":"--infodivBottomMargin","dataset0":"0.7,1.7","dataset1":"0.7,1.7"}, 
+	{"id":"10","cssClass":"person-name","cssProperty":"font-size","cssVariable":"--personNameFontSize","dataset0":"1,1.3","dataset1":"1,1.3"}, 
+	{"id":"11","cssClass":"separator","cssProperty":"margin-top","cssVariable":"--separatorMarginTop","dataset0":"0,0.2","dataset1":"0,0.2"}, 
+	{"id":"12","cssClass":"separator","cssProperty":"margin-bottom","cssVariable":"--separatorMarginBottom","dataset0":"0,0.2","dataset1":"0,0.2"}, 
+	{"id":"13","cssClass":"icon-style","cssProperty":"font-size","cssVariable":"--iconFontSize","dataset0":"1.2,1.5","dataset1":"1.2,1.5"}, 
+	{"id":"14","cssClass":"phone-div","cssProperty":"margin-bottom","cssVariable":"--phonedivBottomMargin","dataset0":"0,0","dataset1":"0,0"}
+], 
+
+"breakpoints": [ 
+	{"id":"1","name":"default","minWidth":"16","dataset":"dataset0"}, 
+	{"id":"2","name":"xsmall","minWidth":"24","dataset":"dataset1"}, 
+	{"id":"3","name":"small1","minWidth":"32","dataset":"dataset0"}, 
+	{"id":"4","name":"small2","minWidth":"48","dataset":"dataset1"}, 
+	{"id":"5","name":"large1","minWidth":"64","dataset":"dataset0"}, 
+	{"id":"6","name":"large2","minWidth":"96","dataset":"dataset1"}, 
+	{"id":"7","name":"xlarge","minWidth":"128","dataset":"dataset0"}
+], 
+
+"markerClass": [ 
+	{"id":"1","cssClass":"persons-card::before","cssProperty":"content","value":"structData"}, 
+	{"id":"2","cssClass":"persons-card::before","cssProperty":"display","value":"none"}
+] 
+
+}

@@ -1,0 +1,212 @@
+
+    
+/* ***** Variables Declaration Start ***** */
+
+        .person-card-section {
+          --normalFontSize: 0.7rem;
+          --cardTopMargin: 2.5rem;
+          --cardBottomMargin: 2.5rem;
+          --cardLeftMargin: 1rem;
+          --cardRightMargin: 1rem;
+          }
+          
+        .person-image-div {
+          --imageDivWidth: 4.5rem;
+          }
+          
+        .person-info-div {
+          --infodivTopMargin: 1.3rem;
+          --infodivBottomMargin: 0.7rem;
+          }
+          
+        .person-name {
+          --personNameFontSize: 1rem;
+          }
+          
+        .separator {
+          --separatorMarginTop: 0rem;
+          --separatorMarginBottom: 0rem;
+          }
+          
+        .icon-style {
+          --iconFontSize: 1.2rem;
+          }
+          
+        .phone-div {
+          --phonedivBottomMargin: 0rem;
+          }
+          
+/* ***** Variables Declaration End ***** */
+
+    
+      /* ****** start structure definition for default */
+
+      
+      .persons-card::before {
+        content: 'dataset0';
+        display: none;
+      }
+      
+      /* insert your css structure for breakpoint default here! ****** */
+
+      @import "breakpoint-default-custom-css";
+
+      /* end css structure for breakpoint default ****** */
+
+      
+      /* ****** end breakpoint definition for default */
+      
+      /* ****** start structure definition for xsmall */
+
+      @media only screen and (min-width: 24rem) {
+        
+      .persons-card::before {
+        content: 'dataset1';
+        display: none;
+      }
+      
+      /* insert your css structure for breakpoint xsmall here! ****** */
+
+      @import "breakpoint-xsmall-custom-css";
+
+      /* end css structure for breakpoint xsmall ****** */
+
+      }
+        
+      /* ****** end breakpoint definition for xsmall */
+      
+      /* ****** start structure definition for small1 */
+
+      @media only screen and (min-width: 32rem) {
+        
+      .persons-card::before {
+        content: 'dataset0';
+        display: none;
+      }
+      
+      /* insert your css structure for breakpoint small1 here! ****** */
+
+      @import "breakpoint-small1-custom-css";
+
+      /* end css structure for breakpoint small1 ****** */
+
+      }
+        
+      /* ****** end breakpoint definition for small1 */
+      
+      /* ****** start structure definition for small2 */
+
+      @media only screen and (min-width: 48rem) {
+        
+      .persons-card::before {
+        content: 'dataset1';
+        display: none;
+      }
+      
+      /* insert your css structure for breakpoint small2 here! ****** */
+
+      @import "breakpoint-small2-custom-css";
+
+      /* end css structure for breakpoint small2 ****** */
+
+      }
+        
+      /* ****** end breakpoint definition for small2 */
+      
+      /* ****** start structure definition for large1 */
+
+      @media only screen and (min-width: 64rem) {
+        
+      .persons-card::before {
+        content: 'dataset0';
+        display: none;
+      }
+      
+      /* insert your css structure for breakpoint large1 here! ****** */
+
+      @import "breakpoint-large1-custom-css";
+
+      /* end css structure for breakpoint large1 ****** */
+
+      }
+        
+      /* ****** end breakpoint definition for large1 */
+      
+      /* ****** start structure definition for large2 */
+
+      @media only screen and (min-width: 96rem) {
+        
+      .persons-card::before {
+        content: 'dataset1';
+        display: none;
+      }
+      
+      /* insert your css structure for breakpoint large2 here! ****** */
+
+      @import "breakpoint-large2-custom-css";
+
+      /* end css structure for breakpoint large2 ****** */
+
+      }
+        
+      /* ****** end breakpoint definition for large2 */
+      
+      /* ****** start structure definition for xlarge */
+
+      @media only screen and (min-width: 128rem) {
+        
+      .persons-card::before {
+        content: 'dataset0';
+        display: none;
+      }
+      
+      /* insert your css structure for breakpoint xlarge here! ****** */
+
+      @import "breakpoint-xlarge-custom-css";
+
+      /* end css structure for breakpoint xlarge ****** */
+
+      }
+        
+      /* ****** end breakpoint definition for xlarge */
+      
+    
+/* ***** Variables Application Start ***** */
+
+        .person-card-section {
+          font-size: var(--normalFontSize);
+          padding-top: var(--cardTopMargin);
+          padding-bottom: var(--cardBottomMargin);
+          padding-left: var(--cardLeftMargin);
+          padding-right: var(--cardRightMargin);
+          }
+          
+        .person-image-div {
+          width: var(--imageDivWidth);
+          }
+          
+        .person-info-div {
+          margin-top: var(--infodivTopMargin);
+          margin-bottom: var(--infodivBottomMargin);
+          }
+          
+        .person-name {
+          font-size: var(--personNameFontSize);
+          }
+          
+        .separator {
+          margin-top: var(--separatorMarginTop);
+          margin-bottom: var(--separatorMarginBottom);
+          }
+          
+        .icon-style {
+          font-size: var(--iconFontSize);
+          }
+          
+        .phone-div {
+          margin-bottom: var(--phonedivBottomMargin);
+          }
+          
+/* ***** Variables Application End ***** */
+
+    

@@ -1,6 +1,6 @@
-# Quasar App (qp)
+# CC Static Web (ccstaticweb)
 
-A Quasar Project
+CC Static Web
 
 ## Install the dependencies
 ```bash
