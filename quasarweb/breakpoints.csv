@@ -1,8 +1,0 @@
-"id","name","minWidth","dataset"
-1,"default",16,"dataset0"
-2,"xsmall",24,"dataset1"
-3,"small1",32,"dataset0"
-4,"small2",48,"dataset1"
-5,"large1",64,"dataset0"
-6,"large2",96,"dataset1"
-7,"xlarge",128,"dataset0"

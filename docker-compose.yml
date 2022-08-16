@@ -23,52 +23,31 @@ services:
       - ./calibrecarriers.com/public-html:/app
     networks:
       - staticweb
-      
-  carriercargo_in_quasar:
-    build:
-      context: ./quasarweb
-      dockerfile: Dockerfile
-    image: quasarweb-carriercargo-in
-    container_name: quasarweb-carriercargo-in
-    restart: unless-stopped
-    ports:
-      - 8083:8083
-    working_dir: /home/node/app
-    command: /bin/bash
-    stdin_open: true
-    tty: true
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-      - NODE_ENV=production
-    volumes:
-      - ./quasarweb:/home/node/app
-    networks:
-      - staticweb
 
-  ftpd_server:
-    image: stilliard/pure-ftpd
-    container_name: staticweb-pure-ftpd
-    ports:
-      - "21:21"
-      - "30000-30009:30000-30009"
-    volumes: # remember to replace /folder_on_disk/ with the path to where you want to store the files on the host machine
-      - "./calibrecarriers.com:/home/calibrecarriers/"
-      - "./ftppass:/etc/pure-ftpd/passwd"
-    # uncomment for ssl/tls, see https://github.com/stilliard/docker-pure-ftpd#tls
-    #      - "/folder_on_disk/ssl:/etc/ssl/private/"
-    # or ssl/tls with Let's Encrypt (cert and key as two files)
-    #      - "/etc/letsencrypt/live/<your_server>/cert.pem:/etc/ssl/private/pure-ftpd-cert.pem"
-    #      - "/etc/letsencrypt/live/<your_server>/privkey.pem:/etc/ssl/private/pure-ftpd-key.pem"
-    environment:
-      PUBLICHOST: "localhost"
-      FTP_USER_NAME: calibrecarriers
-      FTP_USER_PASS: calibre@2409
-      FTP_USER_HOME: /home/calibrecarriers
-    # also for ssl/tls:
-    #      ADDED_FLAGS: "--tls=2"
-    restart: always
-    networks:
-      - staticweb
+  # ftpd_server:
+  #   image: stilliard/pure-ftpd
+  #   container_name: staticweb-pure-ftpd
+  #   ports:
+  #     - "21:21"
+  #     - "30000-30009:30000-30009"
+  #   volumes: # remember to replace /folder_on_disk/ with the path to where you want to store the files on the host machine
+  #     - "./calibrecarriers.com:/home/calibrecarriers/"
+  #     - "./ftppass:/etc/pure-ftpd/passwd"
+  #   # uncomment for ssl/tls, see https://github.com/stilliard/docker-pure-ftpd#tls
+  #   #      - "/folder_on_disk/ssl:/etc/ssl/private/"
+  #   # or ssl/tls with Let's Encrypt (cert and key as two files)
+  #   #      - "/etc/letsencrypt/live/<your_server>/cert.pem:/etc/ssl/private/pure-ftpd-cert.pem"
+  #   #      - "/etc/letsencrypt/live/<your_server>/privkey.pem:/etc/ssl/private/pure-ftpd-key.pem"
+  #   environment:
+  #     PUBLICHOST: "localhost"
+  #     FTP_USER_NAME: calibrecarriers
+  #     FTP_USER_PASS: calibre@2409
+  #     FTP_USER_HOME: /home/calibrecarriers
+  #   # also for ssl/tls:
+  #   #      ADDED_FLAGS: "--tls=2"
+  #   restart: always
+  #   networks:
+  #     - staticweb
       
 networks:
   staticweb:
