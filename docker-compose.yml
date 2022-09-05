@@ -24,6 +24,17 @@ services:
     networks:
       - staticweb
 
+  spaashippinglog_com:
+    image: 'bitnami/apache:latest'
+    container_name: staticweb-spaashippinglog-com
+    restart: unless-stopped
+    ports:
+      - 8083:8080
+    volumes:
+      - ./spaashippinglog.com/public-html:/app
+    networks:
+      - staticweb
+
   # ftpd_server:
   #   image: stilliard/pure-ftpd
   #   container_name: staticweb-pure-ftpd
